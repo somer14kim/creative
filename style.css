@@ -1,0 +1,53 @@
+
+nav{
+    width: calc(100%);
+    padding: 20px;
+    display: inline-flex;
+    flex: 1 0 15%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: stretch;
+    background-color: rgb(240, 144, 197);
+  }
+  
+  nav a{
+    color: black;
+    padding: 10px;
+    text-decoration: underline overline;
+  }
+  nav a:hover{
+    background-color:rgb(127, 201, 158);
+  }
+  #main{
+    margin: 20px;
+    padding: 10px;
+    width: calc(50% - 60px);
+    float: left;
+    background-color: rgb(163, 241, 163);
+     }
+     @keyframes spin { 0% {  transform: rotateZ(0); } 100% {  transform: rotateZ(360deg); }}
+     .mtn {
+        float: right;
+        width: calc(50% - 60px);
+        padding: 10px;
+        margin: 20px;
+        margin-bottom: 80px;
+        animation: spin 10s linear infinite;
+      }
+    .button {
+        width: max-content;
+	background: #8bf18b;
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 500;
+	border: 5px solid rgb(109, 253, 96);
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+    transition: all 2.5s,
+    border 1.5s 2.5s,
+    box-shadow 1.5s 2.5s;
+    transition-timing-function: linear;
+    }
+    .button:hover{
+        background-color:rgb(240, 144, 197);
+    }

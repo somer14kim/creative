@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav>
+        <label for="Home"></label><a href="#">Home</a>
+        <label for="About"></label><a href="#">About</a>
+        <label for="News"></label><a href="#">News</a>
+        <label for="Information"></label><a href="#">Information</a>
+        <label for="Contact"></label><a href="#">Contact</a>
+     </nav>
+<head>
+    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0">
+	<style>
+		.popup {
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(233, 92, 151);
+			display: none;
+		}
+		.popup-content {
+			background-color: rgb(233, 92, 151);
+			margin: 10% auto;
+			padding: 20px;
+			border: 1px solid #381d1d;
+			width: 30%;
+			font-weight: bolder;
+		}
+		.popup-content button {
+			display: block;
+			margin: 0 auto;
+		}
+		.show {
+			display: block;
+		}
+		h1 {
+			color: rgb(163, 241, 163);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Creative Animation Studios</h1>
+	<h3></h3>
+	<button id="myButton" class="button">
+		Click me
+	</button>
+	<div id="myPopup" class="popup">
+		<div class="popup-content">
+			<h1 style="color:rgb(163, 241, 163);">
+				Thank You!
+			</h1>
+			<button id="closePopup">
+				Close
+			</button>
+		</div>
+	</div>
+</div>
+<img class="mtn" src="https://res.cloudinary.com/dlwybkwrp/image/upload/b_rgb:D36DD4/c_pad,w_300,h_300/v1698335226/Animation_xfr03r.png" alt="Esports">
+<div id="main">
+    <div id="main">
+        <label for="Heading 2"></label> <h2 class="special">About Us</h2>
+        <p style="font-size:3vw;">Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. <em>This text has stressed emphasis.</em> Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscin.</p>
+      </div>
+	<script>
+		myButton.addEventListener("click", function () {
+			myPopup.classList.add("show");
+		});
+		closePopup.addEventListener("click", function () {
+			myPopup.classList.remove("show");
+		});
+		window.addEventListener("click", function (event) {
+			if (event.target == myPopup) {
+				myPopup.classList.remove("show");
+			}
+		});
+	</script>
+</body>
+</html>
